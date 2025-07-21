@@ -31,7 +31,7 @@ body {
   font-family: var(--body-font);
   color: var(--text-light);
   box-sizing: border-box;
-  background: url("D:\dev\RollandWorks\img\indexBackground copy.png") center / cover no-repeat fixed;
+  background: url("/img/indexBackground copy.png") center / cover no-repeat fixed;
 }
 
 .logo {
@@ -68,7 +68,7 @@ body {
 /* Full‑screen hero section */
 .hero {
   display: block;
-  background: url("D:/dev/RollandWorks/img/indexBackground.png") center / cover no-repeat fixed;
+  background: url("/img/indexBackground.png") center / cover no-repeat fixed;
   height: 100vh;
 }
       /* Ensure tagline spans full width & centers content */
