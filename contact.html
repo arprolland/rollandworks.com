@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RollandWorks | Contact </title>
+  <!-- External stylesheet for shared styles -->
+  <link rel="stylesheet" href="stylesheet.css" />
+  <link rel="stylesheet" href="drawer.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+    <!-- Always‑visible "Rolland" logo -->
+  <img id="navToggle" src="D:\dev\RollandWorks\img\Menu.png" alt="Menu" />
+
+  <nav id="navDrawer">
+    <a href="index.html">Home</a>
+    <a href="projects.html">Projects</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <section class="tagline">
+        <!-- Replace 'hero-logo.png' with your actual image filename -->
+        <img src="D:\dev\RollandWorks\img\LOGO WHITE.png" alt="RollandWorks" class="hero-logo" />
+    </section>
+  </div>
+
+  <main class="contact-wrapper">
+      <form class="contact-form" action="#" method="post">
+        <h2 style="font-family: var(--title-font); margin: 0;">Contact Me</h2>
+
+        <div class="field-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+        </div>
+
+        <div class="field-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="your@email.com"
+            required
+          />
+        </div>
+
+        <div class="field-group">
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="subject" placeholder="Subject" />
+        </div>
+
+        <div class="field-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Your message..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
