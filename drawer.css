@@ -57,27 +57,3 @@
 }
 
 /* ---------------- Small‑screen tweaks ---------------- */
-@media (max-width: 500px) {
-  #navDrawer {
-    --drawer-width: 75vw;
-    width: var(--drawer-width);
-    max-width: 320px;
-    padding-top: 4.5rem;
-    overflow-y: auto;
-  }
-
-  #navToggle {
-    width: 20px;
-    height: 64px;
-    padding: 0.6rem;
-  }
-
-  #navToggle.active {
-    transform: translateX(calc(var(--drawer-width) / 2)) rotate(90deg);
-  }
-
-  #navDrawer a {
-    font-size: 0.95rem;
-    line-height: 1.4;
-  }
-}
