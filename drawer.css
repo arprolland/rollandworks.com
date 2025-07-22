@@ -59,18 +59,25 @@
 /* ---------------- Small‑screen tweaks ---------------- */
 @media (max-width: 500px) {
   #navDrawer {
-    width: 200px;
-    padding-top: 4rem;
+    --drawer-width: 75vw;
+    width: var(--drawer-width);
+    max-width: 320px;
+    padding-top: 4.5rem;
+    overflow-y: auto;
   }
+
   #navToggle {
-    width: 40px;
-    height: 40px;
-    padding: 0.75rem;
+    width: 20px;
+    height: 64px;
+    padding: 0.6rem;
   }
+
   #navToggle.active {
-    transform: translateX(100px) rotate(90deg); /* center in narrower drawer */
+    transform: translateX(calc(var(--drawer-width) / 2)) rotate(90deg);
   }
+
   #navDrawer a {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
   }
 }
