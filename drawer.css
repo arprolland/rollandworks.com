@@ -59,6 +59,13 @@
 /* ---------------- Small‑screen tweaks ---------------- */
 @media (max-width: 500px) {
   #navDrawer {
+    width: 240px;
+    padding: 3rem;
+    padding-top: 8rem;
+    overflow-y: auto;
+  }
+
+  #navToggle {
     position: fixed;
     top: 0;
     left: 0;
@@ -70,12 +77,6 @@
     z-index: 110;
     /* enable smooth slide + rotate */
     transition: transform 0.3s ease;
-  }
-
-  #navToggle {
-    width: 20px;
-    height: 64px;
-    padding: 0.6rem;
   }
 
   #navToggle.active {
